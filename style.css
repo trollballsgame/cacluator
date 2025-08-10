@@ -1,34 +1,14 @@
-#bucket {
-    width: 200px;
-    height: 75px;
-    background-color: black;
-    position: absolute;
-    /* Add initial position so bucket is visible */
-    left: 300px;
-    top: 200px;
-    /* Optional: add transition for smooth color changes */
-    transition: background-color 0.1s;
-}
-
-#mouse {
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    position: absolute;
-    border-radius: 50%;
-    /* Prevent mouse events on the follower element */
-    pointer-events: none;
-    /* Optional: add transition for smooth color changes */
-    transition: background-color 0.1s;
-    /* Ensure it's above other elements */
-    z-index: 10;
-}
-
-/* Optional: Add body styling for better layout */
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: #f0f0f0;
-    overflow: hidden; /* Prevent scrollbars from mouse movement */
+    background-image: linear-gradient(to right, #fb0079, #ff00fb, #d000ff);
+}
+.input {
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
