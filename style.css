@@ -1,0 +1,34 @@
+#bucket {
+    width: 200px;
+    height: 75px;
+    background-color: black;
+    position: absolute;
+    /* Add initial position so bucket is visible */
+    left: 300px;
+    top: 200px;
+    /* Optional: add transition for smooth color changes */
+    transition: background-color 0.1s;
+}
+
+#mouse {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    /* Prevent mouse events on the follower element */
+    pointer-events: none;
+    /* Optional: add transition for smooth color changes */
+    transition: background-color 0.1s;
+    /* Ensure it's above other elements */
+    z-index: 10;
+}
+
+/* Optional: Add body styling for better layout */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Prevent scrollbars from mouse movement */
+}

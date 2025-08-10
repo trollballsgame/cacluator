@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="X">X: </label>
+    <input type="number" id="X" placeholder="floating rocks of doom">
+    <label for="Y">Y: </label>
+    <input type="number" id="Y" placeholder="can of compressed air">
+    <label for="operation">operation: </label>
+    <br>
+    <p id="result">result: </p>
+    <br><br>
+    <select id="operationbutton">
+        <option value="">Select an operation</option>
+        <optgroup label="basics">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (-)</option>
+            <option value="multiply">Multiplication (*)</option>
+            <option value="divide">Division (÷)</option>
+        </optgroup>
+        <optgroup label="advanced">
+            <option value="modulo">Modulo (%)</option>
+            <option value="power">Power (^)</option>
+        </optgroup>
+        <optgroup label="statistics">
+            <option value="mean">Mean Average</option>
+            <option value="min">Minimum (<<)</option>
+            <option value="max">Maximum (>>)</option>
+        </optgroup>
+        <optgroup label="single variable">
+            <option value="sqrtX">Square Root of X (√X)</option>
+            <option value="sqrtY">Square Root of Y (√Y)</option>
+            <option value="logX">Natural Log of X (ln X)</option>
+            <option value="logY">Natural Log of Y (ln Y)</option>
+            <option value="expX">Exponential of X (e^X)</option>
+            <option value="expY">Exponential of Y (e^Y)</option>
+        </optgroup>
+        <optgroup label="comparisons">            
+            <option value="equal">Equal Check (==)</option>
+            <option value="unequal">Not Equal Check (!=)</option>
+            <option value="greater">Greater Than (>)</option>
+            <option value="less">Less Than (<)</option>
+            <option value="greaterequal">Greater Than or Equal (≥)</option>
+            <option value="lessequal">Less Than or Equal (≤)</option>
+        </optgroup>
+        <optgroup label="expert">
+            <option value="hypot">Hypotenuse</option>
+            <option value="percent">Percentage (%%)</option>
+            <option value="randomizer">Random Number</option>
+        </optgroup>
+        <optgroup label="rounding">
+            <option value="roundX">Round X</option>
+            <option value="roundY">Round Y</option>
+        </optgroup>
+        <optgroup label="others">
+            <option value="CsX">changesign X</option>
+            <option value="CsY">changesign Y</option>
+        </optgroup>
+    </select>
+    <br><br>
+    <button onclick="copyresult()">copy result</button>
+    <script src="script.js"></script>
+</body>
+</html>
